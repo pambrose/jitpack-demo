@@ -26,7 +26,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "com.pambrose"
             artifactId = "jitpack-demo"
-            version = "1.0.0"
+            version = "1.0.1"
             from(components["java"])
         }
     }
