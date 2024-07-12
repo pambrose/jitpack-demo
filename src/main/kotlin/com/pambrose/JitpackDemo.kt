@@ -1,4 +1,8 @@
-package com.pambrose.com.pambrose
+package com.pambrose
 
-class JitpackDemo {
+data class JitpackDemo(
+    val name: String,
+    val description: String,
+) {
+    override fun toString(): String = "name: $name, description: $description"
 }
