@@ -5,7 +5,7 @@ plugins {
     id("com.github.ben-manes.versions") version versionsVersion
 }
 
-val vstr = "1.0.1"
+val vstr = "1.0.2"
 
 group = "com.pambrose"
 version = vstr
