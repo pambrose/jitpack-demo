@@ -5,8 +5,10 @@ plugins {
     id("com.github.ben-manes.versions") version versionsVersion
 }
 
+val vstr = "1.0.1"
+
 group = "com.pambrose"
-version = "1.0.1"
+version = vstr
 
 repositories {
     mavenCentral()
@@ -26,7 +28,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "com.pambrose"
             artifactId = "jitpack-demo"
-            version = "1.0.1"
+            version = vstr
             from(components["java"])
         }
     }
