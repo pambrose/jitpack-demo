@@ -1,8 +1,5 @@
 default: versioncheck
 
-versioncheck:
-	./gradlew dependencyUpdates
-
 clean:
 	./gradlew clean
 
@@ -12,8 +9,11 @@ build:
 jar: clean build
 	./gradlew uberJar
 
-publish:
+publish: jar
 	./gradlew publishToMavenLocal
+
+versioncheck:
+	./gradlew dependencyUpdates
 
 upgrade-wrapper:
 	./gradlew wrapper --gradle-version=8.9 --distribution-type=bin
